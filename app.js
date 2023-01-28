@@ -16,3 +16,6 @@ app.use(fileUpload({
 }))
 app.use(cors())
 app.use('/api/v1', user)
+app.get('/', (req, res) => {
+    res.send('server is working')
+})
